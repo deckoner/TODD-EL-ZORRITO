@@ -6,11 +6,14 @@ public class ProtagonistaController : MonoBehaviour
 {
     public float velocidad;
     public float fuerzaSalto;
+    public float fuerzaGolpe;
+
 
     private bool mirandoDerecha = true;
 
     private Rigidbody2D rigidbody;
     private BoxCollider2D boxColaider;
+    public LayerMask CapaSuelo;
 
     void Start()
     {
@@ -27,10 +30,11 @@ public class ProtagonistaController : MonoBehaviour
         procesarSalto();
     }
 
- /*   bool estaEnSuelo()
+    bool estaEnSuelo()
     {
-        Physics2D.BoxCast(boxColaider.bounds.center, new Vector2(boxColaider.bounds.size.x, boxColaider.size.y), 0f, Vector2.down,0.2f,);
-    }*/
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxColaider.bounds.center, new Vector2(boxColaider.bounds.size.x, boxColaider.size.y), 0f, Vector2.down, 0.2f, CapaSuelo);
+        return raycastHit.collider != null;
+    }
 
 
     void procesarSalto()
@@ -38,7 +42,7 @@ public class ProtagonistaController : MonoBehaviour
         //Logica del salto
         //Condicion if:
         /*Si se pulsa la tecla espacio*/ /*y*/ /*Esta en el suelo*/
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && estaEnSuelo())
         {
             rigidbody.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
         }
