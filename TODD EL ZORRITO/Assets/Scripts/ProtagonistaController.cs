@@ -15,10 +15,13 @@ public class ProtagonistaController : MonoBehaviour
     private BoxCollider2D boxColaider;
     public LayerMask CapaSuelo;
 
+    private Animator animator;
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         boxColaider = GetComponent<BoxCollider2D>();
+        animator = GetComponent<Animator>();
     }
 
 
@@ -51,6 +54,17 @@ public class ProtagonistaController : MonoBehaviour
     {
         //logica de movimiento lateral
         float inputMovimiento = Input.GetAxis("Horizontal");
+
+        //condicion if:
+        //Si esta en moviento
+        if(inputMovimiento != 0f)
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
+        }
 
         rigidbody.velocity = new Vector2(inputMovimiento * velocidad, rigidbody.velocity.y );
 
