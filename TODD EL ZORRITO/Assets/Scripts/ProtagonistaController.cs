@@ -84,8 +84,6 @@ public class ProtagonistaController : MonoBehaviour
         if(inputMovimiento != 0f)
         {
             animator.SetBool("isRunning", true);
-           
-
         }
         else
         {
@@ -123,6 +121,12 @@ public class ProtagonistaController : MonoBehaviour
         {
             countWeapon += 1;
             Destroy(other.gameObject);
+            
+            if (countWeapon >= 1) 
+            {
+                animator.SetLayerWeight(0, 0);
+                animator.SetLayerWeight(1, 1);
+            }
         }
 
         if (other.gameObject.CompareTag("Enemy"))
@@ -137,6 +141,12 @@ public class ProtagonistaController : MonoBehaviour
                 {
                     victoria = true;
                     Win.show();
+                }
+
+                if (countWeapon == 0) 
+                {
+                    animator.SetLayerWeight(1, 0);
+                    animator.SetLayerWeight(0, 1);
                 }
             }
             else

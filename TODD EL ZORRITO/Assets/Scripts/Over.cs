@@ -39,6 +39,7 @@ public class Over : MonoBehaviour
 
     public void Reinicar()
     {
+        Debug.Log("Reiniciar");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
