@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638165423498817479
+      ticks: 638189605136447388
     m_Hash: 1938681658
   m_LockFileStatus:
     m_FilePath: D:/repo/TODD-EL-ZORRITO/TODD EL ZORRITO/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638165423498827699
+      ticks: 638189605136447388
     m_Hash: 2375736576
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -114,6 +114,7 @@ m_PackageAssets:
         - 5.2.3
         - 5.2.4
         - 5.2.6
+        - 5.2.7
         - 6.0.0-pre.1
         - 6.0.0-pre.2
         - 6.0.1
@@ -156,7 +157,8 @@ m_PackageAssets:
         - 5.2.3
         - 5.2.4
         - 5.2.6
-        verified: 5.2.6
+        - 5.2.7
+        verified: 5.2.7
       dependencies:
       - name: com.unity.2d.common
         version: 4.2.1
@@ -791,16 +793,18 @@ m_PackageAssets:
         - 2.0.0
         - 2.0.1
         - 2.0.3
+        - 2.0.4
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
         compatible:
         - 2.0.1
         - 2.0.3
+        - 2.0.4
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 2.0.3
+        verified: 2.0.4
       dependencies: []
       resolvedDependencies: []
       keywords:
@@ -895,6 +899,8 @@ m_PackageAssets:
         - 3.0.16
         - 3.0.17
         - 3.0.18
+        - 3.0.20
+        - 3.0.21
         compatible:
         - 1.0.2
         - 1.0.6
@@ -930,7 +936,9 @@ m_PackageAssets:
         - 3.0.16
         - 3.0.17
         - 3.0.18
-        verified: 3.0.18
+        - 3.0.20
+        - 3.0.21
+        verified: 3.0.21
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -1001,6 +1009,7 @@ m_PackageAssets:
         - 2.0.15
         - 2.0.16
         - 2.0.17
+        - 2.0.18
         compatible:
         - 1.0.2
         - 1.0.3
@@ -1022,7 +1031,8 @@ m_PackageAssets:
         - 2.0.15
         - 2.0.16
         - 2.0.17
-        verified: 2.0.17
+        - 2.0.18
+        verified: 2.0.18
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
@@ -1503,6 +1513,7 @@ m_PackageAssets:
         - 1.6.2
         - 1.6.3
         - 1.6.4
+        - 1.6.5
         - 1.7.0-pre.1
         - 1.7.0-pre.2
         - 1.7.0
@@ -1537,6 +1548,7 @@ m_PackageAssets:
         - 1.6.2
         - 1.6.3
         - 1.6.4
+        - 1.6.5
         - 1.7.0-pre.1
         - 1.7.0-pre.2
         - 1.7.0
@@ -1618,6 +1630,7 @@ m_PackageAssets:
       versions:
         all:
         - 1.0.0
+        - 3.0.0-exp.1
         compatible:
         - 1.0.0
         verified: 1.0.0
