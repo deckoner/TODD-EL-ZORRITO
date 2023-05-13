@@ -2,11 +2,11 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AudioManager
-    - Enemigo
     - Final
     - MenuInicio
     - Over
     - ProtagonistaController
+    - SlimeMalote
     - Win
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -220,11 +220,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3338}
     - Class: 114
-      Script: {instanceID: 3700}
-    - Class: 114
       Script: {instanceID: 4130}
     - Class: 114
       Script: {instanceID: 4658}
+    - Class: 114
+      Script: {instanceID: 5056}
     - Class: 114
       Script: {instanceID: 5158}
     - Class: 114
@@ -307,11 +307,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3338}
     - Class: 114
-      Script: {instanceID: 3700}
-    - Class: 114
       Script: {instanceID: 4130}
     - Class: 114
       Script: {instanceID: 4658}
+    - Class: 114
+      Script: {instanceID: 5056}
     - Class: 114
       Script: {instanceID: 5158}
     - Class: 114
@@ -394,11 +394,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3338}
     - Class: 114
-      Script: {instanceID: 3700}
-    - Class: 114
       Script: {instanceID: 4130}
     - Class: 114
       Script: {instanceID: 4658}
+    - Class: 114
+      Script: {instanceID: 5056}
     - Class: 114
       Script: {instanceID: 5158}
     - Class: 114
